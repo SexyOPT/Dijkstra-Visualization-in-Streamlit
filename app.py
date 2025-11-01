@@ -164,17 +164,6 @@ if ss.G is not None and ss.steps:
             else:
                 st.warning("goal까지의 경로가 없습니다.")
 
-# ---------------------------
-# 4) 배포 안내 (Streamlit Community Cloud)
-# ---------------------------
-st.subheader("4) 배포")
-st.markdown("""
-- GitHub에 이 폴더를 그대로 올린 뒤, **Streamlit Community Cloud**에서 **New app** → repo 선택 → `app.py` 지정하면 끝입니다.
-- 업로드 파일은 세션/컨테이너 종료 시 사라질 수 있으니, 결과를 영구 저장하려면 S3/GCS/DB 등 외부 저장소를 사용하세요.
-- 임시 결과(이미지/로그)는 현재처럼 세션 상태(`st.session_state`)와 즉석 렌더(plt)로 처리하는 편이 안전합니다.
-""")
-
-
 st.markdown("---")
 st.markdown(
     "<div style='text-align: center; color: gray; font-size: 0.8em;'>"
